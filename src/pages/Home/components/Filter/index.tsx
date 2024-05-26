@@ -29,7 +29,7 @@ const Index = ({ value = 'All', setValue = () => {}, regions = [] }: Props) => {
         <label
             htmlFor="filter"
             onClick={() => setShow(!show)}
-            className="h-16 w-full bg-[--primary] border border-[--hover] flex flex-row justify-between lg:text-lg lg:w-1/6 p-4 text-[--input] relative rounded-md items-center shadow-md"
+            className="h-16 w-full bg-[--primary] border border-[--hover] flex flex-row justify-between lg:text-lg lg:w-1/5 p-4 text-[--input] relative rounded-md items-center shadow-md"
         >
             {value === 'All' ? (
                 <p className="text-[-text] text-sm lg:text-lg">
