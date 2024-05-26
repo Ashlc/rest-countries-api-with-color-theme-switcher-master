@@ -32,6 +32,16 @@ const Index = () => {
                     flag: country?.flags.png,
                 };
             });
+            formattedData.sort((a: ICountry, b: ICountry) => {
+                if (a.name < b.name) {
+                    return -1;
+                }
+                if (a.name > b.name) {
+                    return 1;
+                }
+                return 0;
+            });
+
             setCountryList(formattedData);
             setFilteredCountries(formattedData);
         } catch (error) {
