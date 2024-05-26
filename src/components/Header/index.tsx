@@ -1,9 +1,7 @@
 import { MdDarkMode, MdOutlineDarkMode } from 'react-icons/md';
 import { useTheme } from '../../hooks/useTheme';
 
-type Props = {};
-
-const Index = (props: Props) => {
+const Index = () => {
     const { theme, toggleTheme } = useTheme();
 
     const renderIcon = () => {

@@ -5,7 +5,7 @@ type Props = {
     setValue: (value: string) => void;
 };
 
-const Index = ({ value = undefined, setValue = () => {} }: Props) => {
+const Index = ({ value = '', setValue = () => {} }: Props) => {
     return (
         <label
             htmlFor="search"
