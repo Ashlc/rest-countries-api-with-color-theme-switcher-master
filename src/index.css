@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #fafafa;
+    --primary: #ffffff;
+    --text: #111517;
+    --input: #858585;
+    --hover: #f0f0f0;
+
+    font-family: 'Nunito Sans', system-ui, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.dark-theme {
+    --background: #202c37;
+    --primary: #2b3945;
+    --text: #ffffff;
+    --input: #88939c;
+    --hover: #3e4c59;
+
+    color: var(--text);
+    background-color: var(--background);
+}
+
+html {
+    color: var(--text);
+    background-color: var(--background);
+}
