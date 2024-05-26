@@ -99,7 +99,7 @@ const Index = () => {
     ];
 
     return (
-        <div className="flex flex-col items-center w-full px-40 py-10 gap-10">
+        <div className="flex flex-col items-center w-full px-6 lg:px-40 md:px-20 py-10 gap-10">
             <button
                 type="button"
                 onClick={() => {
@@ -111,8 +111,8 @@ const Index = () => {
                 <MdArrowBack size={16} />
                 Back
             </button>
-            <div className="flex flex-col lg:flex-row gap-16 w-full justify-center px-10">
-                <div className="grow">
+            <div className="flex flex-col lg:flex-row gap-16 w-full justify-center lg:px-10">
+                <div className="w-full lg:grow">
                     {data.flag ? (
                         <img
                             src={data.flag}
@@ -139,7 +139,7 @@ const Index = () => {
                                         className="flex flex-row gap-2 w-full"
                                     >
                                         <p className="font-semibold capitalize">{`${field.name}:`}</p>
-                                        <p>
+                                        <p className="font-light">
                                             {data[
                                                 field.key as keyof ICountry
                                             ] || ''}
@@ -166,8 +166,8 @@ const Index = () => {
                             })}
                         </div>
                     </div>
-                    <div className="flex flex-col lg:flex-row flex-wrap gap-2 w-full items-center">
-                        <p className="font-semibold capitalize text-lg whitespace-nowrap">
+                    <div className="flex flex-col lg:flex-row flex-wrap gap-2 w-full lg:items-center">
+                        <p className="font-bold capitalize text-xl whitespace-nowrap">
                             Border Countries:
                         </p>
                         <div className="flex flex-row flex-wrap w-full gap-2">

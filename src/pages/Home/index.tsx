@@ -80,7 +80,7 @@ const Index = () => {
     ];
 
     return (
-        <div className="flex flex-col p-10 lg:px-40 lg:py-20 w-full gap-10">
+        <div className="flex flex-col py-10 px-10 lg:px-40 lg:py-20 w-full gap-10">
             <div className="flex flex-col lg:flex-row lg:justify-between gap-4">
                 <SearchBar value={value} setValue={setValue} />
                 <Filter

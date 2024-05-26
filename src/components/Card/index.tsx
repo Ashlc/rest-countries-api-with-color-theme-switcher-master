@@ -28,11 +28,11 @@ function Index({ country }: Props) {
             onClick={() => {
                 navigate(`/country/${country.name}`);
             }}
-            className="flex flex-col border border-[--hover] items-center rounded-lg overflow-clip shadow-md bg-[--primary] w-[360px]"
+            className="flex flex-col border border-[--hover] items-center rounded-lg overflow-clip shadow-md bg-[--primary] w-[320px]"
         >
             <div className="overflow-clip w-full">
                 {country.flag ? (
-                    <img src={country.flag} alt="" className="h-[252px]" />
+                    <img src={country.flag} alt="" className="h-[224px]" />
                 ) : (
                     <div className="h-16">
                         <RiLoader2Line
